@@ -41,20 +41,26 @@ Before running the project, make sure you have the following installed:
 
 ### Step 1: Run the Auth Server
 First, start the authentication server, which handles client registrations:
+open a new terminal in the main folder of the Kerberos-Server
 ```bash
+cd AuthServer\AuthServer
 python AuthServerMain.py
 ```
 
 ### Step 2: Run the Message Server
 Start the message server to handle client communication:
+open a new terminal in the main folder of the Kerberos-Server
 ```bash
+cd Server\Server
 python ServerMain.py
 ```
 
 ### Step 3: Run the Client
 Finally, run the client, which registers with the Auth Server, gets a key, and communicates securely with the Message Server:
+open a new terminal in the main folder of the Kerberos-Server
 ```bash
-python Client.py
+cd Client\Client
+python ClientMain.py
 ```
 
 ## Author
